@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256111579016",
+    "project_id": "chronicle-cd4a0",
+    "storage_bucket": "chronicle-cd4a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256111579016:android:2cfa0deb483860c204343d",
+        "android_client_info": {
+          "package_name": "com.chronicle.chronicle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80LZreTFWzw_EnDl6oGpsb9UNfvDWy6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
