@@ -1,6 +1,15 @@
-part of 'user_bloc.dart';
+abstract class UserEvent{
 
-@immutable
-sealed class UserEvent {}
+}
 
-class LoginWithGoogleEvent extends UserEvent{}
+class LoginWithGoogleEvent extends UserEvent{
+
+}
+
+class GetUserEvent extends UserEvent {
+
+}
+
+class LogoutEvent extends UserEvent{
+
+}
