@@ -1,3 +1,4 @@
+import 'package:chronicle/cors/theme/app_theme.dart';
 import 'package:chronicle/features/auth/presentation/bloc/user_bloc.dart';
 import 'package:chronicle/features/auth/presentation/pages/auth_page.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -14,24 +15,15 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  setup(); // Must be called before runApp
-
-  // runApp(
-  //   BlocProvider(
-  //     create: (context) => getIt<UserBloc>(), // Ensure UserBloc is registered
-  //     child: MaterialApp.router(
-  //       debugShowCheckedModeBanner: false,
-  //       routerConfig: AppRouter.router,
-  //     ),
-  //   ),
-  // );
+  setup();
 
   runApp(
     BlocProvider(
       create: (context) => getIt<UserBloc>(),
-      child: MaterialApp(
+      child:  MaterialApp.router(
+        routerConfig: AppRouter.router,
+        theme: AppTheme.getTheme(),
         debugShowCheckedModeBanner: false,
-        home: const AuthPage(), // Directly load AuthPage for testing
       ),
     ),
   );
